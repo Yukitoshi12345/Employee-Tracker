@@ -1,5 +1,15 @@
 <h1 align = "center"> Employee Tracker </h1>
 
+## Table of Contents
+- [User Story](#user-story)
+- [Acceptance Criteria](#acceptance-criteria)
+- [Technologies Used](#technologies-used)
+- [Screenshot](#screenshot)
+- [Video](#video)
+- [Output](#output)
+- [Installation](#installation)
+- [License](#license)
+
 ## User Story
 ```
 AS A business owner
