@@ -1,2 +1,2 @@
-# Employee-Tracker
-Challenge 10 of Web Development Bootcamp
+<h1 align = "center"> Employee Tracker </h1>
+
