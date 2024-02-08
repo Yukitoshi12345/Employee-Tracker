@@ -41,3 +41,9 @@ THEN I am prompted to select an employee to update and their new role and this i
 
 ## Video
 ![]()
+
+## Output 
+
+## Installation
+The project was uploaded to [GitHub](https://github.com/) at the following repository:
+[https://github.com/yukitoshi12345/Employee-Tracker/](https://github.com/yukitoshi12345/Employee-Tracker)
