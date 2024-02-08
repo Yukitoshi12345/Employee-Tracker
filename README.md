@@ -1,5 +1,11 @@
 <h1 align = "center"> Employee Tracker </h1>
 
+Managing a company requires meticulous organisation and an understanding of different departments, roles, and employees. This command-line application addresses this need by empowering business owners like you to gain full control over their company's internal structure.
+
+Through a user-friendly interface, you can view comprehensive information about departments, roles, and employees. This includes details like department names and IDs, employee salaries and managers, and role-specific data. Adding new departments, roles, and employees is made simple with easy-to-follow prompts, allowing you to adapt your company structure as needed. Additionally, you can efficiently update employee roles, ensuring your team remains aligned with changing needs.
+
+With this application, you gain a single source of truth for your company's organisational structure, enabling informed decision-making and fostering a well-managed, efficient environment.
+
 ## Table of Contents
 - [User Story](#user-story)
 - [Acceptance Criteria](#acceptance-criteria)
