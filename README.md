@@ -10,6 +10,7 @@ With this application, you gain a single source of truth for your company's orga
 - [User Story](#user-story)
 - [Acceptance Criteria](#acceptance-criteria)
 - [Technologies Used](#technologies-used)
+- [Test Instruction](#test-instruction)
 - [Screenshot](#screenshot)
 - [Video](#video)
 - [Output](#output)
@@ -48,8 +49,32 @@ THEN I am prompted to select an employee to update and their new role and this i
 - JavaScript
 - Node.js
 - Inquirer (version 8.2.4)
+- Express.js (version 4.18.2)
 - MySQL
+- MySQL2 (version 3.9.1)
 
+## Test Instruction
+#### Command to Install node:
+ `
+npm install
+`
+
+#### Command to Install npm:
+`
+npm init -y
+`
+#### Command to install Express dependencies:
+`
+npm i express
+`
+#### Command to install Inquirer dependencies:
+`
+npm i inquirer@8.2.4
+`
+#### Command to install MySQL2 dependencies:
+`
+npm i mysql2
+`
 
 ## Screenshot
 ![]()
