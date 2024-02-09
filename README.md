@@ -54,7 +54,7 @@ THEN I am prompted to select an employee to update and their new role and this i
 - MySQL2 (version 3.9.1)
 
 ## Test Instruction
-#### Command to Install node:
+#### Command to Install Node:
  `
 npm install
 `
