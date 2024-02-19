@@ -86,14 +86,7 @@ npm i mysql2
 ## Output 
 This project lets you manage your company's departments, roles, and employees efficiently through simple command-line prompts.
 
-Before you begin:
-- Ensure you have Node.js and npm installed on your system.
-- Open a terminal or command prompt where you can run commands.
-
-Let's get started!
-
 1. Run the application:
-
 - Navigate to your project directory in the terminal and execute 'npm start'.
 
 2. Choose your action:
