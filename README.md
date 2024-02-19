@@ -49,10 +49,10 @@ THEN I am prompted to select an employee to update and their new role and this i
 
 ## Technologies Used
 - JavaScript
+- MySQL
 - Node.js
 - Inquirer (version 8.2.4)
 - Express.js (version 4.18.2)
-- MySQL
 - MySQL2 (version 3.9.1)
 - Sequelize (version 6.37.1)
 - Dotenv (version 16.4.4)
@@ -63,10 +63,6 @@ THEN I am prompted to select an employee to update and their new role and this i
 npm install
 `
 
-#### Command to Install npm:
-`
-npm init -y
-`
 #### Command to install Express dependencies:
 `
 npm i express
