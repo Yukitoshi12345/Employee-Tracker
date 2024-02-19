@@ -94,10 +94,7 @@ Let's get started!
 
 1. Run the application:
 
-Navigate to your project directory in the terminal and execute:
-`
-npm start
-`
+- Navigate to your project directory in the terminal and execute 'npm start'.
 
 2. Choose your action:
 The program will display a menu with options:
@@ -109,7 +106,7 @@ The program will display a menu with options:
 - "View All Departments",
 - "Add New Department",
 - "Exit"
-Choose an option for your desired action
+Choose an option for your desired action.
 
 3. View data:
 Options 1, 4, and 6 present formatted tables:
