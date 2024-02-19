@@ -59,10 +59,9 @@ THEN I am prompted to select an employee to update and their new role and this i
 
 ## Test Instruction
 #### Command to Install Node:
- `
+`
 npm install
 `
-
 #### Command to install Express dependencies:
 `
 npm i express
@@ -91,13 +90,13 @@ This project lets you manage your company's departments, roles, and employees ef
 
 2. Choose your action:
 The program will display a menu with options:
-- "View All Employees",
-- "Add New Employee",
-- "Update Employee Role",
-- "View All Roles",
-- "Add New Role",
-- "View All Departments",
-- "Add New Department",
+- "View All Employees"
+- "Add New Employee"
+- "Update Employee Role"
+- "View All Roles"
+- "Add New Role"
+- "View All Departments"
+- "Add New Department"
 - "Exit"
 
 Choose an option for your desired action.
