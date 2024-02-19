@@ -93,6 +93,7 @@ Before you begin:
 Let's get started!
 
 1. Run the application:
+
 Navigate to your project directory in the terminal and execute:
 `
 npm start
