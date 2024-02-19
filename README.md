@@ -99,6 +99,7 @@ The program will display a menu with options:
 - "View All Departments",
 - "Add New Department",
 - "Exit"
+
 Choose an option for your desired action.
 
 3. View data:
@@ -109,9 +110,9 @@ Options 1, 4, and 6 present formatted tables:
 
 4. Add new entries:
 Options 2, 5, and 7 guide you through adding new entities:
-- Add an employee: Specify the employee's first and last name, role, and manager to add them to the company.
-- Add a role: Provide the role name, salary, and department for the new role.
-- Add a department: Enter the department name, and it's added to the database.
+- Add new employee: Specify the employee's first and last name, role, and manager to add them to the company.
+- Add new role: Provide the role name, salary, and department for the new role.
+- Add new department: Enter the department name, and it's added to the database.
 
 5. Update employee roles:
 Option 3 lets you change employee roles:
