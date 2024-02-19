@@ -3,7 +3,7 @@
 DROP DATABASE IF EXISTS Employee_Tracker_db;
 
 -- Creates a new database named "Employee_Tracker_db"
--- This establishes the database to store exmployee tracker information
+-- This establishes the database to store employee tracker information
 CREATE DATABASE Employee_Tracker_db;
 
 -- Switch to the newly created Employee_Tracker_db
