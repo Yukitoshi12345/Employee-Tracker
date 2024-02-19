@@ -1,3 +1,5 @@
+![JavaScript](https://img.shields.io/badge/JavaScript-orange) ![Node.js](https://img.shields.io/badge/Node.js-blue) ![Inquirer@8.2.4](https://img.shields.io/badge/Inquirer@8.2.4-green) 
+
 <h1 align = "center"> Employee Tracker </h1>
 
 Managing a company requires meticulous organisation and an understanding of different departments, roles, and employees. This command-line application addresses this need by empowering business owners like you to gain full control over their company's internal structure.
