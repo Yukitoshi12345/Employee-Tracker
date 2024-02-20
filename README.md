@@ -74,6 +74,14 @@ npm i inquirer@8.2.4
 `
 npm i mysql2
 `
+#### Command to install Sequelize dependencies:
+`
+npm i sequelize
+`
+#### Command to install Dotenv dependencies:
+`
+npm i dotenv
+`
 
 ## Screenshot
 ![]()
