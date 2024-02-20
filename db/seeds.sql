@@ -1,10 +1,12 @@
+-- Insert department records with descriptive names
 INSERT INTO department (id, name)
 VALUES (001, "Marketing"),
        (002, "Information Technology"),
        (003, "Human Resources"),
        (004, "Finance"),
        (005, "Operations");
-       
+
+-- Insert role records with titles, salaries, and department IDs       
 INSERT INTO role (id, title, salary, department_id)
 VALUES (001, "Digital Marketing Manager", "110000", 001),
        (002, "Content Marketing Specialist", "87500", 001),
@@ -17,7 +19,7 @@ VALUES (001, "Digital Marketing Manager", "110000", 001),
        (009, "Supply Chain Manager", "137863", 005),
        (010, "Inventory Control Specialist", "81182", 005);
 
-       
+-- Insert employee records with names, role IDs, and manager IDs     
 INSERT INTO employee (id, first_name, last_name, role_id, manager_id)
 VALUES (001, "Violet", "Nelson", 001, NULL),
        (002, "Mason", "Harris", 002, 001),
