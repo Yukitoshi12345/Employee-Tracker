@@ -1,5 +1,5 @@
 const inquirer = require('inquirer');
-const db = require("./lib/connections");
+const db = require("./config/connections");
 
 function selectQuestion() {
     inquirer
