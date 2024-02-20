@@ -85,10 +85,10 @@ npm i mysql2
 ## Output 
 This project lets you manage your company's departments, roles, and employees efficiently through simple command-line prompts.
 
-1. Run the application:
+1. <b>Run the application:</b>
 - Navigate to your project directory in the terminal and execute 'npm start'.
 
-2. Choose your action:
+2. <b>Choose your action: </b>
 The program will display a menu with options:
 - View All Employees
 - Add New Employee
@@ -99,26 +99,25 @@ The program will display a menu with options:
 - Add New Department
 - Exit
 
-Choose an option for your desired action.
 
-3. View data:
+3. <b>View data:</b>
 Options 1, 4, and 6 present formatted tables:
 - View all employees: Presents employee details including names, roles, departments, salaries, and managers.
 - View all roles: Shows job titles, IDs, departments, and salaries.
 - View all departments: Displays department names and IDs.
 
-4. Add new entries:
+4. <b>Add new entries:</b>
 Options 2, 5, and 7 guide you through adding new entities:
 - Add new employee: Specify the employee's first and last name, role, and manager to add them to the company.
 - Add new role: Provide the role name, salary, and department for the new role.
 - Add new department: Enter the department name, and it's added to the database.
 
-5. Update employee roles:
+5. <b>Update employee roles:</b>
 Option 3 lets you change employee roles:
 - Select the employee you want to update from a list.
 - Choose their new role, and the change is recorded in the database.
 
-6. Exit the program:
+6. <b>Exit the program:</b>
 - Option 8 lets you quit when you're done managing your organisation.
 
 With this command-line tool, you have a powerful way to keep your company structure organised and up-to-date!
