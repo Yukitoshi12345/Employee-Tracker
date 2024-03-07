@@ -15,8 +15,8 @@ CREATE TABLE department (
     department_name VARCHAR(30) NOT NULL
 );
 
--- Creates a table named "row"
-CREATE TABLE row (
+-- Creates a table named "role"
+CREATE TABLE role (
     id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     title VARCHAR(30) NOT NULL,
     salary DECIMAL(10,2),

@@ -57,7 +57,7 @@ THEN I am prompted to select an employee to update and their new role and this i
 - Dotenv (version 16.4.4)
 
 ## Test Instruction
-#### Command to Install Node:
+#### Command to install packages and any packages it depends on:
 `
 npm install
 `
