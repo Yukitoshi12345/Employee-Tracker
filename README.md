@@ -1,4 +1,4 @@
-![JavaScript](https://img.shields.io/badge/JavaScript-orange) ![Node.js](https://img.shields.io/badge/Node.js-blue) ![Inquirer@8.2.4](https://img.shields.io/badge/Inquirer@8.2.4-green) ![Express.js@4.18.2](https://img.shields.io/badge/Express.js@4.18.2-purple) ![MySQL2@3.9.1](https://img.shields.io/badge/MySQL2@3.9.1-lightgreen) ![Sequelize@6.37.1](https://img.shields.io/badge/Sequelize@6.37.1-lightblue) ![Dotenv@16.4.4](https://img.shields.io/badge/Dotenv@16.4.4-grey) 
+![JavaScript](https://img.shields.io/badge/JavaScript-orange) ![Node.js](https://img.shields.io/badge/Node.js-blue) ![Inquirer@8.2.4](https://img.shields.io/badge/Inquirer@8.2.4-green) ![Express.js@4.18.2](https://img.shields.io/badge/Express.js@4.18.2-purple) ![MySQL2@3.9.1](https://img.shields.io/badge/MySQL2@3.9.1-lightgreen) ![Sequelize@6.37.1](https://img.shields.io/badge/Sequelize@6.37.1-lightblue) ![Dotenv@16.4.4](https://img.shields.io/badge/Dotenv@16.4.4-grey)
 
 <h1 align = "center"> Employee Tracker </h1>
 
@@ -9,6 +9,7 @@ Through a user-friendly interface, you can view comprehensive information about 
 With this application, you gain a single source of truth for your company's organisational structure, enabling informed decision-making and fostering a well-managed, efficient environment.
 
 ## Table of Contents
+
 - [User Story](#user-story)
 - [Acceptance Criteria](#acceptance-criteria)
 - [Technologies Used](#technologies-used)
@@ -20,6 +21,7 @@ With this application, you gain a single source of truth for your company's orga
 - [License](#license)
 
 ## User Story
+
 ```
 AS A business owner
 I WANT to be able to view and manage the departments, roles, and employees in my company
@@ -27,6 +29,7 @@ SO THAT I can organize and plan my business
 ```
 
 ## Acceptance Criteria
+
 ```
 GIVEN a command-line application that accepts user input
 WHEN I start the application
@@ -48,6 +51,7 @@ THEN I am prompted to select an employee to update and their new role and this i
 ```
 
 ## Technologies Used
+
 - JavaScript
 - Node.js
 - Inquirer (version 8.2.4)
@@ -57,46 +61,50 @@ THEN I am prompted to select an employee to update and their new role and this i
 - Dotenv (version 16.4.4)
 
 ## Test Instruction
+
 #### Command to install packages and any packages it depends on:
-`
-npm install
-`
+
+`npm install`
+
 #### Command to install Express dependencies:
-`
-npm i express
-`
+
+`npm i express`
+
 #### Command to install Inquirer dependencies:
-`
-npm i inquirer@8.2.4
-`
+
+`npm i inquirer@8.2.4`
+
 #### Command to install MySQL2 dependencies:
-`
-npm i mysql2
-`
+
+`npm i mysql2`
+
 #### Command to install Sequelize dependencies:
-`
-npm i sequelize
-`
+
+`npm i sequelize`
+
 #### Command to install Dotenv dependencies:
-`
-npm i dotenv
-`
+
+`npm i dotenv`
 
 ## Screenshot
-![]()
 
+![]()
 
 ## Video
+
 ![]()
 
-## Output 
+## Output
+
 This project lets you manage your company's departments, roles, and employees efficiently through simple command-line prompts.
 
 1. <b>Run the application:</b>
+
 - Navigate to your project directory in the terminal and execute 'npm start'.
 
 2. <b>Choose your action: </b>
-The program will display a menu with options:
+   The program will display a menu with options:
+
 - View All Employees
 - Add New Employee
 - Update Employee Role
@@ -106,33 +114,37 @@ The program will display a menu with options:
 - Add New Department
 - Exit
 
-
 3. <b>View data:</b>
-Options 1, 4, and 6 present formatted tables:
+   Options 1, 4, and 6 present formatted tables:
+
 - View all employees: Presents employee details including names, roles, departments, salaries, and managers.
 - View all roles: Shows job titles, IDs, departments, and salaries.
 - View all departments: Displays department names and IDs.
 
 4. <b>Add new entries:</b>
-Options 2, 5, and 7 guide you through adding new entities:
+   Options 2, 5, and 7 guide you through adding new entities:
+
 - Add new employee: Specify the employee's first and last name, role, and manager to add them to the company.
 - Add new role: Provide the role name, salary, and department for the new role.
 - Add new department: Enter the department name, and it's added to the database.
 
 5. <b>Update employee roles:</b>
-Option 3 lets you change employee roles:
+   Option 3 lets you change employee roles:
+
 - Select the employee you want to update from a list.
 - Choose their new role, and the change is recorded in the database.
 
 6. <b>Exit the program:</b>
+
 - Option 8 lets you quit when you're done managing your organisation.
 
 With this command-line tool, you have a powerful way to keep your company structure organised and up-to-date!
 
-
 ## Installation
+
 The project was uploaded to [GitHub](https://github.com/) at the following repository:
 [https://github.com/yukitoshi12345/Employee-Tracker/](https://github.com/yukitoshi12345/Employee-Tracker)
 
 ## License
+
 This project is licensed under the [MIT License](https://github.com/Yukitoshi12345/Employee-Tracker/blob/main/LICENSE).

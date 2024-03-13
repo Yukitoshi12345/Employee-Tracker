@@ -1,5 +1,5 @@
 -- Insert department records with descriptive names
-INSERT INTO department (department_name)
+INSERT INTO departments (department_name)
 VALUES ("Marketing"),
        ("Information Technology"),
        ("Human Resources"),
@@ -7,7 +7,7 @@ VALUES ("Marketing"),
        ("Operations");
 
 -- Insert role records with titles, salaries, and department IDs       
-INSERT INTO role (title, salary, department_id)
+INSERT INTO roles (title, salary, department_id)
 VALUES ("Digital Marketing Manager", "110000", 001),
        ("Content Marketing Specialist", "87500", 001),
        ("Senior Software Developer", "129471", 002),
@@ -20,7 +20,7 @@ VALUES ("Digital Marketing Manager", "110000", 001),
        ("Inventory Control Specialist", "81182", 005);
 
 -- Insert employee records with names, role IDs, and manager IDs     
-INSERT INTO employee (first_name, last_name, role_id, manager_id)
+INSERT INTO employees (first_name, last_name, role_id, manager_id)
 VALUES ("Violet", "Nelson", 001, NULL),
        ("Mason", "Harris", 002, 001),
        ("Mila", "Lee", 003, NULL),
