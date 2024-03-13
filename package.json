@@ -4,9 +4,7 @@
   "description": "<h1 align = \"center\"> Employee Tracker </h1>",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon server",
-    "db:init": "mysql -u root -p < db/schema.sql < db/seeds.sql && echo 'Database initialised.'",
-    "start": "npm run db:init && node index.js"
+    "dev": "nodemon server"
   },
   "keywords": [],
   "author": "",
