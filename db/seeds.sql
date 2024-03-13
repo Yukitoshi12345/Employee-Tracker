@@ -1,3 +1,4 @@
+USE Employee_Tracker_db;
 -- Insert department records with descriptive names
 INSERT INTO departments (department_name)
 VALUES ("Marketing"),
