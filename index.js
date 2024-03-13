@@ -37,7 +37,7 @@ function selectQuestion() {
     .then((answer) => {
       switch (answer.queryOptions) {
         case "View All Employees":
-          viewEmployees();
+          viewEmployee(db, selectQuestion);
           break;
         case "Add New Employee":
           addEmployee();
@@ -64,26 +64,5 @@ function selectQuestion() {
     });
 }
 
-function viewDepartment() {
-  console.log("Viewing all Departments in database");
-  //query to select name and id from department
-  // Structures the department table
-  db.query(
-    `SELECT department_name AS "Department Name", id AS "Department ID" FROM departments`,
-    (error, departments) => {
-      if (error) {
-        console.log("Failed to find departments", error);
-        return;
-      }
-      //Checking if there are no departments
-      if (departments.length === 0) {
-        console.log("No departments found");
-      } else {
-        // displays table for all departments
-        console.table(departments);
-      }
-    }
-  );
-}
-
+selectQuestion();
 module.exports = selectQuestion;

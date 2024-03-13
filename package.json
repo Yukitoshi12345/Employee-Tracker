@@ -2,13 +2,11 @@
   "name": "employee-tracker",
   "version": "1.0.0",
   "description": "<h1 align = \"center\"> Employee Tracker </h1>",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "dev": "nodemon server",
-    "db:init": "mysql -u root -p < db/schema.sql && echo 'Database initialised.'",
-    "db:seed": "npm run db:init && npm run seed && echo 'Database seeded.'",
-    "seed": "node seeds/index",
-    "start": "npm run db:seed && node server.js"
+    "db:init": "mysql -u root -p < db/schema.sql < db/seeds.sql && echo 'Database initialised.'",
+    "start": "npm run db:init && node index.js"
   },
   "keywords": [],
   "author": "",
@@ -16,10 +14,8 @@
   "dependencies": {
     "console.table": "^0.10.0",
     "dotenv": "^16.4.5",
-    "express": "^4.18.2",
     "inquirer": "^8.2.6",
-    "mysql2": "^3.9.2",
-    "sequelize": "^6.37.1"
+    "mysql2": "^3.9.2"
   },
   "devDependencies": {
     "nodemon": "^3.1.0",
