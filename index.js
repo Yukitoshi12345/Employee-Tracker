@@ -53,7 +53,7 @@ function selectQuestion() {
 }
 
 function viewEmployees() {
-  db.query(`SELECT * FROM employee`, (err, result) => {
+  db.query(`SELECT * FROM employees`, (err, result) => {
     if (err) {
       console.log(err);
     }
