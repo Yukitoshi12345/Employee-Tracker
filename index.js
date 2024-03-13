@@ -3,6 +3,7 @@ const mysql = require(`mysql2`);
 const ctable = require(`console.table`);
 
 const viewEmployee = require("./tables/view/viewEmployee");
+const addEmployee = require("./tables/add/addEmployee");
 
 require("dotenv").config();
 
