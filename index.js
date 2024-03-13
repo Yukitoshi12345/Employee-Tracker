@@ -4,6 +4,7 @@ const ctable = require(`console.table`);
 
 const viewEmployee = require("./tables/view/viewEmployee");
 const addEmployee = require("./tables/add/addEmployee");
+const updateEmployee = require("./tables/update/updateEmployee");
 
 require("dotenv").config();
 
