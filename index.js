@@ -7,6 +7,7 @@ const addEmployee = require("./tables/add/addEmployee");
 const updateEmployee = require("./tables/update/updateEmployee");
 
 const viewDepartment = require("./tables/view/viewDepartment");
+const viewRoles = require("./tables/view/viewRoles");
 
 require("dotenv").config();
 
@@ -48,7 +49,7 @@ function selectQuestion() {
           updateEmployeeRoles();
           break;
         case "View All Roles":
-          viewRoles();
+          viewRoles(db, selectQuestion);
           break;
         case "Add New Role":
           addRole();
