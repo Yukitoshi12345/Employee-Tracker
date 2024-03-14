@@ -6,6 +6,8 @@ const viewEmployee = require("./tables/view/viewEmployee");
 const addEmployee = require("./tables/add/addEmployee");
 const updateEmployee = require("./tables/update/updateEmployee");
 
+const viewDepartment = require("./tables/view/viewDepartment");
+
 require("dotenv").config();
 
 const db = mysql.createConnection({
@@ -52,7 +54,7 @@ function selectQuestion() {
           addRole();
           break;
         case "View All Departments":
-          viewDepartment();
+          viewDepartment(db, selectQuestion);
           break;
         case "Add New Departments":
           addDepartment();
