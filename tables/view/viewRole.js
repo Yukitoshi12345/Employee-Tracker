@@ -1,7 +1,7 @@
 function viewRole(db, selectQuestion) {
-  const rolesTable = `SELECT roles.id, roles.title AS Title, roles.salary AS Salary, departments.department_name AS Department
-    FROM roles
-    JOIN departments ON roles.department_id = departments.id `;
+  const rolesTable = `SELECT r.id, r.title AS Title, r.salary AS Salary, d.department_name AS Department
+    FROM roles r
+    JOIN departments d ON r.department_id = d.id `;
   db.query(rolesTable, (err, results) => {
     if (err) {
       console.error(err);

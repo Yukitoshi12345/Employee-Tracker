@@ -35,9 +35,9 @@ function addRole(db, selectQuestion) {
         ])
         .then((answers) => {
           db.query(
-            "INSERT INTO roles (title, salary, department_id) VALUES (?, ?, ?)",
+            `INSERT INTO roles (title, salary, department_id) VALUES (?, ?, ?)`,
             [answers.title, answers.salary, answers.departmentId],
-            (err, result) => {
+            (err) => {
               if (err) {
                 console.error(err);
               } else {
@@ -48,7 +48,7 @@ function addRole(db, selectQuestion) {
           );
         })
         .catch((err) => {
-          console.error("Error with inquirer");
+          console.error(err);
         });
     }
     addRolesQs();
