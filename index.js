@@ -60,7 +60,7 @@ function selectQuestion() {
           viewDepartment(db, selectQuestion);
           break;
         case "Add New Departments":
-          addDepartment();
+          addDepartment(db, selectQuestion);
           break;
         case "Exit":
           db.end();
