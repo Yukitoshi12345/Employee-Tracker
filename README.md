@@ -73,21 +73,33 @@ View the total utilized budget of a department—in other words, the combined sa
 
 ## Test Instruction
 
-#### Command to install packages and any packages it depends on:
+To use this project:
 
-`npm install`
+- Get a copy of this repo to your local machine.
+- Install the `Node Module`
 
-#### Command to install Inquirer dependencies:
+```
+npm install
+```
 
-`npm i inquirer@8.2.4`
+- Install `MySQL2`
+- Change the .env copy file to .env and insert your database password
+- Navigate to `db`, and connect to the database by typing in `mysql -u root -p`, and type in your password.
+- Type in the following:
 
-#### Command to install MySQL2 dependencies:
+```
+source schema.sql;
+```
 
-`npm i mysql2`
+```
+source seeds.sql;
+```
 
-#### Command to install Dotenv dependencies:
+- Navigate to `index.js`. Start the index.js by typing in the following:
 
-`npm i dotenv`
+```
+node index.js
+```
 
 ## Screenshot
 
