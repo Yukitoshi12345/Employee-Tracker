@@ -1,7 +1,7 @@
 const inquirer = require("inquirer");
 
 function deleteDepartment(db, selectQuestion) {
-  const deletingDepartment = `SELECT department_name FROM departments`;
+  const deletingDepartment = `SELECT department_name, id FROM departments`;
   db.query(deletingDepartment, (err, results) => {
     if (err) {
       console.error(err);
@@ -25,7 +25,7 @@ function deleteDepartment(db, selectQuestion) {
         ])
         .then((answers) => {
           db.query(
-            `DELETE FROM departments WHERE department_name = ?`,
+            `DELETE FROM departments WHERE id = ?`,
             [answers.department],
             (err) => {
               if (err) {
