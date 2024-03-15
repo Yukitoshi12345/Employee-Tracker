@@ -1,4 +1,4 @@
-function viewRoles(db, selectQuestion) {
+function viewRole(db, selectQuestion) {
   const rolesTable = `SELECT roles.id, roles.title AS Title, roles.salary AS Salary, departments.department_name AS Department
     FROM roles
     JOIN departments ON roles.department_id = departments.id `;
@@ -12,4 +12,4 @@ function viewRoles(db, selectQuestion) {
   });
 }
 
-module.exports = viewRoles;
+module.exports = viewRole;

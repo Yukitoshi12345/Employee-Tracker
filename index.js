@@ -1,13 +1,15 @@
 const inquirer = require("inquirer");
 const mysql = require(`mysql2`);
-const ctable = require(`console.table`);
 
 const viewEmployee = require("./tables/view/viewEmployee");
-const addEmployee = require("./tables/add/addEmployee");
-const updateEmployee = require("./tables/update/updateEmployee");
-
 const viewDepartment = require("./tables/view/viewDepartment");
-const viewRoles = require("./tables/view/viewRoles");
+const viewRole = require("./tables/view/viewRole");
+
+const addEmployee = require("./tables/add/addEmployee");
+const addDepartment = require("./tables/add/addDepartment");
+const addRole = require("./tables/add/addRole");
+
+const updateEmployeeRoles = require("./tables/update/updateEmployee");
 
 require("dotenv").config();
 
@@ -49,10 +51,10 @@ function selectQuestion() {
           updateEmployeeRoles();
           break;
         case "View All Roles":
-          viewRoles(db, selectQuestion);
+          viewRole(db, selectQuestion);
           break;
         case "Add New Role":
-          addRole();
+          addRole(db, selectQuestion);
           break;
         case "View All Departments":
           viewDepartment(db, selectQuestion);
