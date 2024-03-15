@@ -11,6 +11,8 @@ const addRole = require("./tables/add/addRole");
 
 const updateEmployeeRoles = require("./tables/update/updateEmployee");
 
+const deleteDepartment = require("./tables/delete/deleteDepartment");
+
 require("dotenv").config();
 
 const db = mysql.createConnection({
@@ -35,6 +37,7 @@ function selectQuestion() {
           "Add New Role",
           "View All Departments",
           "Add New Department",
+          "Delete Department",
           "Exit",
         ],
       },
@@ -61,6 +64,9 @@ function selectQuestion() {
           break;
         case "Add New Department":
           addDepartment(db, selectQuestion);
+          break;
+        case "Delete Department":
+          deleteDepartment(db, selectQuestion);
           break;
         case "Exit":
           db.end();
