@@ -48,19 +48,20 @@ WHEN I choose to add an employee
 THEN I am prompted to enter the employee’s first name, last name, role, and manager, and that employee is added to the database
 WHEN I choose to update an employee role
 THEN I am prompted to select an employee to update and their new role and this information is updated in the database
-
-**Bonus**
-Try to add some additional functionality to your application, such as the ability to do the following:
-
-Update employee managers.
-
-View employees by manager.
-
-View employees by department.
-
-Delete departments, roles, and employees.
-
-View the total utilized budget of a department—in other words, the combined salaries of all employees in that department.
+WHEN I choose to update an employee manager
+THEN I am prompted to select an employee and a new manager, and the employee’s manager is updated in the database
+WHEN I choose to view employees by manager
+THEN I am presented with a list of managers, and upon selecting one, I am shown a formatted table of all employees who report to that manager
+WHEN I choose to view employees by department
+THEN I am presented with a list of departments, and upon selecting one, I am shown a formatted table of all employees in that department
+WHEN I choose to delete a department
+THEN I am prompted to select a department, and that department is removed from the database along with any associated roles and employees
+WHEN I choose to delete a role
+THEN I am prompted to select a role, and that role and any associated employees are removed from the database
+WHEN I choose to delete an employee
+THEN I am prompted to select an employee, and that employee is removed from the database
+WHEN I choose to view the total utilised budget of a department
+THEN I am prompted to select a department, and I am then presented with the total sum of salaries for all employees in that department
 ```
 
 ## Technologies Used
