@@ -30,7 +30,7 @@ function deleteRole(db, selectQuestion) {
             } else {
               console.log("Role successfully deleted!");
             }
-            selectQuestion(); // Call the callback function here
+            selectQuestion();
           });
         })
         .catch((err) => {
