@@ -13,6 +13,7 @@ const addDepartment = require("./tables/add/addDepartment");
 const addRole = require("./tables/add/addRole");
 
 const updateEmployeeRoles = require("./tables/update/updateEmployee");
+const updateEmployeeByManager = require("./tables/update/updateEmployeeByManager");
 
 const deleteDepartment = require("./tables/delete/deleteDepartment");
 const deleteEmployee = require("./tables/delete/deleteEmployee");
@@ -35,25 +36,32 @@ function selectQuestion() {
         message: "What would you like to do?",
         name: "queryOptions",
         choices: [
+          "View All Departments",
+          "View All Roles",
           "View All Employees",
           "View Employee By Department",
           "View Employee by Manager",
           "View Total Utilised Budget",
+          "Add New Department",
+          "Add New Role",
           "Add New Employee",
           "Update Employee Role",
-          "View All Roles",
-          "Add New Role",
-          "View All Departments",
-          "Add New Department",
+          "Update Employee By Manager",
           "Delete Department",
-          "Delete Employee",
           "Delete Role",
+          "Delete Employee",
           "Exit",
         ],
       },
     ])
     .then((answer) => {
       switch (answer.queryOptions) {
+        case "View All Departments":
+          viewDepartment(db, selectQuestion);
+          break;
+        case "View All Roles":
+          viewRole(db, selectQuestion);
+          break;
         case "View All Employees":
           viewEmployee(db, selectQuestion);
           break;
@@ -66,32 +74,29 @@ function selectQuestion() {
         case "View Total Utilised Budget":
           viewDepartmentBudget(db, selectQuestion);
           break;
+        case "Add New Department":
+          addDepartment(db, selectQuestion);
+          break;
+        case "Add New Role":
+          addRole(db, selectQuestion);
+          break;
         case "Add New Employee":
           addEmployee(db, selectQuestion);
           break;
         case "Update Employee Role":
           updateEmployeeRoles(db, selectQuestion);
           break;
-        case "View All Roles":
-          viewRole(db, selectQuestion);
-          break;
-        case "Add New Role":
-          addRole(db, selectQuestion);
-          break;
-        case "View All Departments":
-          viewDepartment(db, selectQuestion);
-          break;
-        case "Add New Department":
-          addDepartment(db, selectQuestion);
+        case "Update Employee By Manager":
+          updateEmployeeByManager(db, selectQuestion);
           break;
         case "Delete Department":
           deleteDepartment(db, selectQuestion);
           break;
-        case "Delete Employee":
-          deleteEmployee(db, selectQuestion);
-          break;
         case "Delete Role":
           deleteRole(db, selectQuestion);
+          break;
+        case "Delete Employee":
+          deleteEmployee(db, selectQuestion);
           break;
         case "Exit":
           db.end();
