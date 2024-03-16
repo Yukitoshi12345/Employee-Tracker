@@ -50,7 +50,7 @@ function selectQuestion() {
           viewEmployee(db, selectQuestion);
           break;
         case "Add New Employee":
-          addEmployee();
+          addEmployee(db, selectQuestion);
           break;
         case "Update Employee Role":
           updateEmployeeRoles();
