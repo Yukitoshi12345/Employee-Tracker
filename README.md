@@ -135,12 +135,12 @@ This project lets you manage your company's departments, roles, and employees ef
 3. <b>View data:</b>
    You can view information in a formatted table for employees, roles, and departments:
 
-- View All Employees: Shows details such as employee IDs, names, job titles, departments, salaries, and managers.
+- View All Employees: Shows details such as employee ids, names, job titles, departments, salaries, and managers.
 - View All Roles: Presents job titles, role IDs, the departments each belongs to, and the salaries.
-- View All Departments: Displays department names alongside their IDs.
+- View All Departments: Displays department names alongside their ids.
 - View Employee By Department: Shows all employees in a selected department.
 - View Employee by Manager: Lists employees who report to a selected manager.
-- View Total Utilized Budget of a Department: Summarizes the total salaries within a chosen department.
+- View Total Utilised Budget of a Department: Summarises the total salaries within a chosen department.
 
 <br>
 
