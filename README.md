@@ -14,7 +14,6 @@ With this application, you gain a single source of truth for your company's orga
 - [Acceptance Criteria](#acceptance-criteria)
 - [Technologies Used](#technologies-used)
 - [Test Instruction](#test-instruction)
-- [Screenshot](#screenshot)
 - [Video](#video)
 - [Output](#output)
 - [Installation](#installation)
@@ -102,10 +101,6 @@ source seeds.sql;
 node index.js
 ```
 
-## Screenshot
-
-![]()
-
 ## Video
 
 ![]()
@@ -118,43 +113,73 @@ This project lets you manage your company's departments, roles, and employees ef
 
 - Navigate to your project directory in the terminal and execute 'npm start'.
 
+<br>
+
 2. <b>Choose your action: </b>
    The program will display a menu with options:
 
+- View All Departments
+- View All Roles
 - View All Employees
+- View Employee By Department
+- View Employee by Manager
+- View Total Utilised Budget
+- Add New Department
+- Add New Role
 - Add New Employee
 - Update Employee Role
-- View All Roles
-- Add New Role
-- View All Departments
-- Add New Department
+- Update Employee By Manager
+- Delete Department
+- Delete Role
+- Delete Employee
 - Exit
 
-3. <b>View data:</b>
-   Options 1, 4, and 6 present formatted tables:
+<br>
 
-- View all employees: Presents employee details including names, roles, departments, salaries, and managers.
-- View all roles: Shows job titles, IDs, departments, and salaries.
-- View all departments: Displays department names and IDs.
+3. <b>View data:</b>
+   You can view information in a formatted table for employees, roles, and departments:
+
+- View All Employees: Shows details such as employee IDs, names, job titles, departments, salaries, and managers.
+- View All Roles: Presents job titles, role IDs, the departments each belongs to, and the salaries.
+- View All Departments: Displays department names alongside their IDs.
+- View Employee By Department: Shows all employees in a selected department.
+- View Employee by Manager: Lists employees who report to a selected manager.
+- View Total Utilized Budget of a Department: Summarizes the total salaries within a chosen department.
+
+<br>
 
 4. <b>Add new entries:</b>
-   Options 2, 5, and 7 guide you through adding new entities:
+   These options guide you through the process of adding new entries to the database:
 
-- Add new employee: Specify the employee's first and last name, role, and manager to add them to the company.
-- Add new role: Provide the role name, salary, and department for the new role.
-- Add new department: Enter the department name, and it's added to the database.
+- Add New Department: Enter the name of the department to add it to the database.
+- Add New Role: Provide details like the role name, salary, and department.
+- Add New Employee: Specify the employee's first and last name, role, and manager.
+
+<br>
 
 5. <b>Update employee roles:</b>
-   Option 3 lets you change employee roles:
+   You can also update existing employee details:
 
-- Select the employee you want to update from a list.
-- Choose their new role, and the change is recorded in the database.
+- Update Employee Role: Change the role of an existing employee.
+- Update Employee Manager: Assign a new manager to an existing employee.
 
-6. <b>Exit the program:</b>
+<br>
 
-- Option 8 lets you quit when you're done managing your organisation.
+6. <b>Delete Entries:</b>
+   If you need to remove entries from the database, you have these options:
 
-With this command-line tool, you have a powerful way to keep your company structure organised and up-to-date!
+- Delete Department: Remove an existing department from the database.
+- Delete Role: Delete an existing role.
+- Delete Employee: Remove an employee from the company records.
+
+<br>
+
+7. <b>Exit the program:</b>
+   When your management tasks are complete, choose 'Exit' to end the session.
+
+<br>
+
+Overall, this command-line tool is a powerful resource for keeping your company structure organised and up-to-date with real-time changes!
 
 ## Installation
 
