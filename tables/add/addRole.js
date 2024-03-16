@@ -25,13 +25,20 @@ function addRole(db, selectQuestion) {
             message: "What is the title of the new role?",
             type: "input",
             filter: capitaliseTitle, // This will capitalize each word's first letter
+            validate: (input) => {
+              // Validate to ensure that the input is not empty
+              if (input.trim().length === 0) {
+                return "The role title cannot be empty. Please enter a title.";
+              }
+              return true;
+            },
           },
           {
             name: "salary",
             message: "What is the salary of the new role?",
             type: "input",
-            // Add validation if you want to ensure that the input is a valid number
             validate: (input) => {
+              // Ensure that the input is a valid number
               if (isNaN(parseFloat(input))) {
                 return "Please enter a valid salary (number).";
               }
@@ -40,7 +47,7 @@ function addRole(db, selectQuestion) {
           },
           {
             name: "departmentId",
-            message: "Select one of the departments",
+            message: "Which department does this role belong to?",
             type: "list",
             choices: departmentChoices,
           },
