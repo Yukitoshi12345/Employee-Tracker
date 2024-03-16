@@ -31,7 +31,7 @@ function deleteDepartment(db, selectQuestion) {
               if (err) {
                 console.error(err);
               } else {
-                console.log("Role successfully deleted!");
+                console.log("Department successfully deleted!");
               }
               selectQuestion(); // Call the callback function here
             }

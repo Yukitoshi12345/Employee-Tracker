@@ -12,6 +12,7 @@ const addRole = require("./tables/add/addRole");
 const updateEmployeeRoles = require("./tables/update/updateEmployee");
 
 const deleteDepartment = require("./tables/delete/deleteDepartment");
+const deleteRole = require("./tables/delete/deleteRole");
 
 require("dotenv").config();
 
@@ -38,6 +39,7 @@ function selectQuestion() {
           "View All Departments",
           "Add New Department",
           "Delete Department",
+          "Delete Role",
           "Exit",
         ],
       },
@@ -67,6 +69,9 @@ function selectQuestion() {
           break;
         case "Delete Department":
           deleteDepartment(db, selectQuestion);
+          break;
+        case "Delete Role":
+          deleteRole(db, selectQuestion);
           break;
         case "Exit":
           db.end();
