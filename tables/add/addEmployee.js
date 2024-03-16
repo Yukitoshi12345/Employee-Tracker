@@ -32,11 +32,25 @@ function addEmployee(db, selectQuestion) {
               name: "FirstName",
               message: "What is the new Employee's first name?",
               type: "input",
+              // Validate to ensure that the input is not empty
+              validate: (input) => {
+                if (input.trim() === "") {
+                  return "Please enter a first name.";
+                }
+                return true;
+              },
             },
             {
               name: "LastName",
               message: "What is the new Employee's last name?",
               type: "input",
+              // Validate to ensure that the input is not empty
+              validate: (input) => {
+                if (input.trim() === "") {
+                  return "Please enter a last name.";
+                }
+                return true;
+              },
             },
             {
               name: "roles",
@@ -52,12 +66,19 @@ function addEmployee(db, selectQuestion) {
             },
           ])
           .then((answers) => {
-            const insertQuery = `INSERT INTO employees (first_name, last_name, role_id, manager_id) VALUES (?, ?, ?, ?)`;
+            // Capitalise the first letter of the first name and last name
+            const firstNameCapitalised =
+              answers.FirstName.charAt(0).toUpperCase() +
+              answers.FirstName.slice(1);
+            const lastNameCapitalised =
+              answers.LastName.charAt(0).toUpperCase() +
+              answers.LastName.slice(1);
+
             db.query(
-              insertQuery,
+              `INSERT INTO employees (first_name, last_name, role_id, manager_id) VALUES (?, ?, ?, ?)`,
               [
-                answers.FirstName,
-                answers.LastName,
+                firstNameCapitalised,
+                lastNameCapitalised,
                 answers.roles,
                 answers.manager,
               ],
@@ -75,7 +96,7 @@ function addEmployee(db, selectQuestion) {
             console.error(err);
           });
       }
-      addEmployeeQs(); // This function is now being called correctly within the db.query callback
+      addEmployeeQs(); // Call the addEmployeeQs function here to initiate the prompts
     });
   });
 }
