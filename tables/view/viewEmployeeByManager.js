@@ -22,9 +22,9 @@ function viewEmployeeByManager(db, selectQuestion) {
       inquirer
         .prompt([
           {
-            type: "list",
             name: "managerId",
             message: "Filter by manager:",
+            type: "list",
             choices: managerChoices,
           },
         ])

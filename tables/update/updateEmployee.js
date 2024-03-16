@@ -29,15 +29,15 @@ function updateEmployeeRole(db, selectQuestion) {
         inquirer
           .prompt([
             {
-              type: "list",
               name: "updatedEmployee",
               message: "Which employee would you like to update?",
+              type: "list",
               choices: employeeChoices,
             },
             {
-              type: "list",
               name: "updatedRole",
               message: "What is their new role?",
+              type: "list",
               choices: roleChoices,
             },
           ])

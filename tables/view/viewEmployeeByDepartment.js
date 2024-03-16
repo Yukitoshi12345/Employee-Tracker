@@ -16,9 +16,9 @@ function viewEmployeeByDepartment(db, selectQuestion) {
       inquirer
         .prompt([
           {
-            type: "list",
             name: "department",
             message: "Filter by department:",
+            type: "list",
             choices: departmentChoices,
           },
         ])

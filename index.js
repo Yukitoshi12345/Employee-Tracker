@@ -6,6 +6,7 @@ const viewDepartment = require("./tables/view/viewDepartment");
 const viewRole = require("./tables/view/viewRole");
 const viewEmployeeByDepartment = require("./tables/view/viewEmployeeByDepartment");
 const viewEmployeeByManager = require("./tables/view/viewEmployeeByManager");
+const viewDepartmentBudget = require("./tables/view/viewTotalUtlisedBudget");
 
 const addEmployee = require("./tables/add/addEmployee");
 const addDepartment = require("./tables/add/addDepartment");
@@ -37,6 +38,7 @@ function selectQuestion() {
           "View All Employees",
           "View Employee By Department",
           "View Employee by Manager",
+          "View Total Utilised Budget",
           "Add New Employee",
           "Update Employee Role",
           "View All Roles",
@@ -60,6 +62,9 @@ function selectQuestion() {
           break;
         case "View Employee By Manager":
           viewEmployeeByManager(db, selectQuestion);
+          break;
+        case "View Total Utilised Budget":
+          viewDepartmentBudget(db, selectQuestion);
           break;
         case "Add New Employee":
           addEmployee(db, selectQuestion);
