@@ -4,6 +4,7 @@ const mysql = require(`mysql2`);
 const viewEmployee = require("./tables/view/viewEmployee");
 const viewDepartment = require("./tables/view/viewDepartment");
 const viewRole = require("./tables/view/viewRole");
+const viewEmployeeByDepartment = require("./tables/view/viewEmployeeByDepartment");
 
 const addEmployee = require("./tables/add/addEmployee");
 const addDepartment = require("./tables/add/addDepartment");
@@ -33,6 +34,7 @@ function selectQuestion() {
         name: "queryOptions",
         choices: [
           "View All Employees",
+          "View Employee By Department",
           "Add New Employee",
           "Update Employee Role",
           "View All Roles",
@@ -50,6 +52,9 @@ function selectQuestion() {
       switch (answer.queryOptions) {
         case "View All Employees":
           viewEmployee(db, selectQuestion);
+          break;
+        case "View Employee By Department":
+          viewEmployeeByDepartment(db, selectQuestion);
           break;
         case "Add New Employee":
           addEmployee(db, selectQuestion);
