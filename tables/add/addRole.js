@@ -1,5 +1,9 @@
 const inquirer = require("inquirer");
 
+function capitaliseTitle(title) {
+  return title.replace(/\b(\w)/g, (s) => s.toUpperCase());
+}
+
 function addRole(db, selectQuestion) {
   const addingRoles = `SELECT id, department_name FROM departments`;
   db.query(addingRoles, (err, results) => {
@@ -18,13 +22,21 @@ function addRole(db, selectQuestion) {
         .prompt([
           {
             name: "title",
-            message: "What is the title of your new role?",
+            message: "What is the title of the new role?",
             type: "input",
+            filter: capitaliseTitle, // This will capitalize each word's first letter
           },
           {
             name: "salary",
-            message: "What is the salary of your new role?",
+            message: "What is the salary of the new role?",
             type: "input",
+            // Add validation if you want to ensure that the input is a valid number
+            validate: (input) => {
+              if (isNaN(parseFloat(input))) {
+                return "Please enter a valid salary (number).";
+              }
+              return true;
+            },
           },
           {
             name: "departmentId",
