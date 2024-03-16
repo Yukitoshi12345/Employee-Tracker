@@ -99,31 +99,25 @@ node index.js
 
 ## Video
 
-<br>
-<b> Viewing departments, roles, employees, and total utilised budget:</b>
+A walk through video is [here](https://youtu.be/bkCjCLw5ZjI).
 
 <br>
+<b> Viewing departments, roles, employees, and total utilised budget:</b>
 
 ![](./assets/videos/View.gif)
 
 <br>
 <b> Adding departments, roles, and employees:</b>
 
-<br>
-
 ![](./assets/videos/Add.gif)
 
 <br>
 <b> Updating employees:</b>
 
-<br>
-
 ![](./assets/videos/Update.gif)
 
 <br>
 <b> Deleting departments, roles, and employees:</b>
-
-<br>
 
 ![](./assets/videos/Delete.gif)
 
@@ -133,7 +127,7 @@ This project lets you manage your company's departments, roles, and employees ef
 
 1. <b>Run the application:</b>
 
-- Navigate to your project directory in the terminal and execute 'npm start'.
+- Navigate to your project directory in the terminal and execute 'node index.js'.
 
 <br>
 
