@@ -2,11 +2,7 @@
 
 <h1 align = "center"> Employee Tracker </h1>
 
-Managing a company requires meticulous organisation and an understanding of different departments, roles, and employees. This command-line application addresses this need by empowering business owners like you to gain full control over their company's internal structure.
-
-Through a user-friendly interface, you can view comprehensive information about departments, roles, and employees. This includes details like department names and IDs, employee salaries and managers, and role-specific data. Adding new departments, roles, and employees is made simple with easy-to-follow prompts, allowing you to adapt your company structure as needed. Additionally, you can efficiently update employee roles, ensuring your team remains aligned with changing needs.
-
-With this application, you gain a single source of truth for your company's organisational structure, enabling informed decision-making and fostering a well-managed, efficient environment.
+In today's fast-paced business environment, being able to swiftly and effectively manage the organisational structure is critical for any business owner. With our command-line application, you are empowered to seamlessly oversee and fine-tune your company's framework. At the launch of the application, an array of intuitive options is at your fingertips, allowing you to view all departments, roles, and employees, as well as add or modify them as your operation requires. The interface provides neatly organised tables for a clear visual of department hierarchies, roles, and employee details, ensuring you have all the information you need to make informed decisions. Whether you're expanding your team, reshaping departments, adjusting salaries, or optimising management roles, this tool is designed to ensure your business structure is not just maintained but thrives. It simplifies intricate tasks such as reallocating roles or managing budgets by department, streamlining your processes and giving you more time to focus on strategic growth. With this application, organising and planning your business is more straightforward, letting you cultivate an environment where productivity and clarity drive success.
 
 ## Table of Contents
 
