@@ -65,7 +65,7 @@ function selectQuestion() {
           addEmployee(db, selectQuestion);
           break;
         case "Update Employee Role":
-          updateEmployeeRoles();
+          updateEmployeeRoles(db, selectQuestion);
           break;
         case "View All Roles":
           viewRole(db, selectQuestion);
