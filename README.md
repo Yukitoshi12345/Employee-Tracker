@@ -99,6 +99,16 @@ node index.js
 
 ## Video
 
+<b> Viewing departments, roles, employees, and total utilised budget</b>
+![]()
+
+<b> Adding departments, roles, and employees</b>
+![]()
+
+<b> Updating employees</b>
+![]()
+
+<b> Deleting departments, roles, and employees</b>
 ![]()
 
 ## Output
