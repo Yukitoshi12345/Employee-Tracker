@@ -60,7 +60,7 @@ function selectQuestion() {
         case "View Employee By Department":
           viewEmployeeByDepartment(db, selectQuestion);
           break;
-        case "View Employee By Manager":
+        case "View Employee by Manager":
           viewEmployeeByManager(db, selectQuestion);
           break;
         case "View Total Utilised Budget":
