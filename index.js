@@ -5,6 +5,7 @@ const viewEmployee = require("./tables/view/viewEmployee");
 const viewDepartment = require("./tables/view/viewDepartment");
 const viewRole = require("./tables/view/viewRole");
 const viewEmployeeByDepartment = require("./tables/view/viewEmployeeByDepartment");
+const viewEmployeeByManager = require("./tables/view/viewEmployeeByManager");
 
 const addEmployee = require("./tables/add/addEmployee");
 const addDepartment = require("./tables/add/addDepartment");
@@ -35,6 +36,7 @@ function selectQuestion() {
         choices: [
           "View All Employees",
           "View Employee By Department",
+          "View Employee by Manager",
           "Add New Employee",
           "Update Employee Role",
           "View All Roles",
@@ -55,6 +57,9 @@ function selectQuestion() {
           break;
         case "View Employee By Department":
           viewEmployeeByDepartment(db, selectQuestion);
+          break;
+        case "View Employee By Manager":
+          viewEmployeeByManager(db, selectQuestion);
           break;
         case "Add New Employee":
           addEmployee(db, selectQuestion);
