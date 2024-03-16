@@ -20,10 +20,13 @@ function addEmployee(db, selectQuestion) {
         return;
       }
 
-      const managerChoices = managersResults.map((manager) => ({
-        name: manager.Name,
-        value: manager.id,
-      }));
+      // Add an option for no manager
+      const managerChoices = [{ name: "No Manager", value: null }].concat(
+        managersResults.map((manager) => ({
+          name: manager.Name,
+          value: manager.id,
+        }))
+      );
 
       function addEmployeeQs() {
         inquirer
@@ -32,7 +35,6 @@ function addEmployee(db, selectQuestion) {
               name: "FirstName",
               message: "What is the new Employee's first name?",
               type: "input",
-              // Validate to ensure that the input is not empty
               validate: (input) => {
                 if (input.trim() === "") {
                   return "Please enter a first name.";
@@ -44,7 +46,6 @@ function addEmployee(db, selectQuestion) {
               name: "LastName",
               message: "What is the new Employee's last name?",
               type: "input",
-              // Validate to ensure that the input is not empty
               validate: (input) => {
                 if (input.trim() === "") {
                   return "Please enter a last name.";
@@ -66,7 +67,6 @@ function addEmployee(db, selectQuestion) {
             },
           ])
           .then((answers) => {
-            // Capitalise the first letter of the first name and last name
             const firstNameCapitalised =
               answers.FirstName.charAt(0).toUpperCase() +
               answers.FirstName.slice(1);
@@ -88,7 +88,7 @@ function addEmployee(db, selectQuestion) {
                 } else {
                   console.log("A new employee has been added!");
                 }
-                selectQuestion(); // Call the callback function here
+                selectQuestion();
               }
             );
           })
@@ -96,7 +96,7 @@ function addEmployee(db, selectQuestion) {
             console.error(err);
           });
       }
-      addEmployeeQs(); // Call the addEmployeeQs function here to initiate the prompts
+      addEmployeeQs();
     });
   });
 }
